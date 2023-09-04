@@ -11,16 +11,16 @@ class Create extends Component
 {
     use WithFileUploads;
  //image
-// #[Rule('required', message: 'Masukkan Gambar Post')]
-// #[Rule('image', message: 'File Harus Gambar')]
-// #[Rule('max:1024', message: 'Ukuran File Maksimal 1MB')]
+ #[Rule('required', message: 'Masukkan Gambar Post')]
+ #[Rule('image', message: 'File Harus Gambar')]
+ #[Rule('max:1024', message: 'Ukuran File Maksimal 1MB')]
 public $image;
 //title
-//#[Rule('required', message: 'Masukkan Judul Post')]
+#[Rule('required', message: 'Masukkan Judul Post')]
 public $title;
 //content
-// #[Rule('required', message: 'Masukkan Isi Post')]
-// #[Rule('min:3', message: 'Isi Post Minimal 3 Karakter')]
+#[Rule('required', message: 'Masukkan Isi Post')]
+ #[Rule('min:3', message: 'Isi Post Minimal 3 Karakter')]
 public $content;
 /**
 * store
