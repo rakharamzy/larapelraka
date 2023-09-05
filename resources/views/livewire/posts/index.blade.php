@@ -43,12 +43,10 @@ asset('/storage/posts/'.$post->image) }}" class="rounded" style="width:
 <td>{{ $post->title }}</td>
 <td>{!! $post->content !!}</td>
 <td class="text-center">
-<a href="/edit/{{ $post->id }}"
+<a href="/edit/{{ $post->id }}" wire:navigate class="btn btn-sm btn-primary">EDIT</a>
 
-wire:navigate class="btn btn-sm btn-primary">EDIT</a>
+<button wire:click="destroy({{ $post->id }})" class="btn btn-sm btn-danger">DELETE</button>
 
-<button class="btn btn-sm btn-
-danger">DELETE</button>
 
 </td>
 </tr>

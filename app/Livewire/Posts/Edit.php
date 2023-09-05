@@ -2,10 +2,10 @@
 
 namespace App\Livewire\Posts;
 
-use App\Models\post;
+use App\Models\Post;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-use Livewire\artibut\Rule;
+use Livewire\Attributes\Rule;
 
 class Edit extends Component
 {
@@ -32,7 +32,7 @@ $this->content = $post->content;
 /**
 * update
 *
-* @return void
+* @re/turn void
 */
 public function update()
 {
